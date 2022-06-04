@@ -2,25 +2,28 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=lin]{geometry}
+\usepackage[margin=1.25in]{geometry}
 
-\titleformat{\section}
-{\huge\bfseries\lowercase}
+\titleformat{\section}[frame]
+{\huge}
 {}
-{0pt}
-{}[\titlerule]
+{0.25em}
+{\filcenter\bfseries\lowercase}
 
 \titleformat{\subsection}
 {\bfseries\Large}
-{$\bullet$}
-{0pt}
+{\hspace{-.25in}$\bullet$}
+{0em}
 {}
 
 \titleformat{\subsubsection}[runin]
 {\bfseries}
 {}
-{0pt}
+{0em}
 {}[---]
+
+\titlespacing{\subsubsection}
+{0em}{.25em}{1em}
 
 \renewcommand{\maketitle}{
 \begin{center}
